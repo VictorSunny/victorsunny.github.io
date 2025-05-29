@@ -1,0 +1,33 @@
+
+:root {
+    --c-orange: rgb(227, 85, 53);
+    --c-cyan: rgb(23, 205, 227);
+    --c-yellow: rgb(246, 192, 53);
+    --c-red: rgb(218, 53, 75);
+    --c-blue: rgb(47, 135, 142);
+    --c-purple: rgb(168, 94, 143);
+    --c-green: rgb(155, 229, 48);
+    --c-pale-pink: rgb(194, 174, 170);
+    --c-pale: rgb(125, 126, 140);
+}
+
+button {
+    font-family: monospace;
+    color: white;
+    padding: 1rem;
+    border: 2px transparent solid;
+    transition: 0.2s;
+    margin: 0px 10px;
+}
+
+.git-btn {
+    background-color: var(--c-purple);
+}
+.wb-btn {
+    color: black;
+    background-color: var(--c-cyan);
+}
+
+button:hover {
+    border-color: white;
+}

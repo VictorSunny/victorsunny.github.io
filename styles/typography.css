@@ -1,0 +1,121 @@
+
+:root {
+  --c-orange: rgb(227, 85, 53);
+  --c-cyan: rgb(23, 205, 227);
+  --c-yellow: rgb(246, 192, 53);
+  --c-red: rgb(218, 53, 75);
+  --c-blue: rgb(47, 135, 142);
+  --c-purple: rgb(168, 94, 143);
+  --c-green: rgb(155, 229, 48);
+  --c-pale-pink: rgb(194, 174, 170);
+  --c-pale: rgb(125, 126, 140);
+}
+
+
+
+@font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url('../assets/fonts/ClashGrotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../assets/fonts/poppins-v23-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+
+
+* {
+  font-family: 'ClashGrotesk-Regular';
+}
+
+html {
+  font-size: 10px;
+  user-select: none;
+}
+
+h1, h2, h3, footer {
+  font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+  -webkit-text-stroke: 0.05rem black;
+
+}
+
+h1{
+  font-size: 3rem;
+}
+
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--c-yellow);
+  font-size: 2rem;
+  -webkit-text-stroke: 0.03rem var(--c-phthalo-green);
+}
+
+li {
+  color: var(--c-yellow);
+  font-weight: 600;
+}
+
+footer label {
+  color: var(--c-yellow);
+}
+
+footer * {
+  color: white;
+  font-family: 'poppins';
+}
+
+.p-text, .shake-icon, li, footer {
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: gold;
+}
+
+
+@media (min-width: 992px) and (max-width: 1500px) {
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3, footer label {
+    font-size: 2.8rem;
+  }
+  .p-text, li {
+    font-size: 1.8rem;
+  }
+  .shake-icon, footer {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 4.5rem;
+    }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  .p-text {
+    font-size: 1.6rem;
+  }
+  .shake-icon, footer {
+    font-size: 2rem;
+  }
+}

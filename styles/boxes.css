@@ -1,0 +1,48 @@
+
+main, footer {
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    main, footer {
+        padding: 0px 50px;
+    }
+}
+@media (min-width: 992px) {
+    main, footer {
+        padding: 0px 200px;
+    }
+}
+
+.card {
+    margin: 10px 0px;
+    opacity: 0.05;
+    scale: 0.5;
+    transition: 1s;
+}
+
+.appear {
+    animation: unhide 0.4s ease 0.2s, enlarge 0.25s ease-in-out 0.2s;
+    animation-fill-mode: forwards;   
+}
+
+body , header, footer {
+    border-radius: 0px;
+}
+
+
+@keyframes unhide {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes enlarge {
+    100% {
+        scale: 1;
+    }
+}
+
+
+
+

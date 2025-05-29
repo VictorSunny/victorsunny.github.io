@@ -1,0 +1,122 @@
+:root {
+    --box-size: 40px
+}
+
+
+
+.card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin: 20px auto;
+}
+
+
+h1 {
+    color: red;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+
+    /* transiton shorthand: property - duration - timing_function - delay */
+    /* transition: all 0.5s ease-in 0.2; */
+}
+
+h1:hover {
+    color: darkgoldenrod;
+    letter-spacing: 10px;
+}
+
+.magic-box {
+    vertical-align: top;
+    height: var(--box-size);
+    width: var(--box-size);
+    border: 4px solid yellow;
+
+    animation-name: magic-box-life;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+
+    /* animation: shorthand follows order above; */
+
+    /* indicates what final form element will take after animation completes
+    animation-fill-mode: forwards; */
+}
+
+@keyframes magic-box-life {
+    0% {
+        /* default starts with original property values */
+    }
+    25% {
+        border-color: green;
+        height: var(--box-size);
+        width: 80px;
+    }
+    50% {
+        border-color: red;
+        width: 80px;
+        height: 80px;
+    }
+    75% {
+        border-color: blueviolet;
+        transform: rotate(90)
+    }
+    100% {
+        border-color: deeppink;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.transform-scale-box {
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: pink;
+    animation: scaling 2s ease none infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1, 1);
+        transform: translate(0%, -100%);
+
+    }
+    50%{
+        transform: scale(4, 1);
+    }
+    100% {
+        transform: scale(4, 2);
+        transform: translate(0%, 100%);
+        transform: rotate(180deg);
+    }
+}
+
+.skew-box {
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    animation: skewing 2s ease none infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skewing {
+    from {
+        transform: skew(-40deg, -50deg)
+    }
+    to {
+        transform: skew(40deg, 50deg)
+    }
+}

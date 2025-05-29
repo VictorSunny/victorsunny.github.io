@@ -1,0 +1,53 @@
+/* .bg-switcher {
+    height: 300px;
+    width: 500px;
+    border: 2px solid salmon;
+    animation: txtSwitcher 2s ease infinite;
+    color: wheat;
+    font-size: 100px;
+
+}
+ */
+
+.ct {
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.shake-icon {
+    width: max-content;
+    animation: shake 2s ease 0.1s infinite;  
+
+}
+
+@keyframes txtSwitcher {
+    0% {
+        background-image: element();
+    }
+    100% {
+        background-image: linear-gradient(purple, yellow);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform:rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(90deg);
+    }   
+    100% {
+        transform: rotate(0deg);
+    }   
+}

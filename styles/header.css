@@ -1,0 +1,159 @@
+
+:root {
+    --c-orange: rgb(227, 85, 53);
+    --c-cyan: rgb(23, 205, 227);
+    --c-yellow: rgb(246, 192, 53);
+    --c-red: rgb(218, 53, 75);
+    --c-blue: rgb(47, 135, 142);
+    --c-purple: rgb(168, 94, 143);
+    --c-green: rgb(155, 229, 48);
+    --c-phthalo-green: rgb(18, 53, 36);
+    --c-pale-pink: rgb(194, 174, 170);
+    --c-pale: rgb(125, 126, 140);
+
+  /* screen dimensions  */
+
+  --mobile: 480px;
+  --tablet: 768px;
+  --laptop: 992px;
+  --desktop: 1200px;
+}
+
+
+.intro-container {
+    position: relative;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    min-height: 40vh;
+    background-size: contain;
+    background-image: url("../assets/images/doodle-bg.jpg");
+}
+
+@media (min-width: 768px) {
+    .intro-container {
+        padding-top: 50px;
+    }
+}
+
+.transparency-overlay {
+    position: absolute;
+    inset: 0 0 0 0 ;
+    z-index: 0;
+    background-image: linear-gradient(transparent 10%, var(--c-blue));
+}
+
+.transparency-overlay-dark {
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 1;
+    background-color: var(--c-blue);
+    opacity: 0.2;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h2.intro-text, .prof-pic, .about-container {
+    opacity: 0;
+    animation: unhide 2s ease 2s 1 alternate forwards;  
+}
+
+.intro-info {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prof-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    border: 2px white solid;
+    object-fit: cover;
+    background-color: var(--c-blue);
+    transition: 0.5s; 
+}
+
+@media (min-width: 768px) {
+    .prof-pic {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 5rem;
+    }
+}
+
+.shake-icon {
+    animation: shake 2s ease 3s infinite, dropDown 2s ease 1s;
+}
+
+.intro-text-container-1, .intro-text-container-2 {
+    justify-self: center;
+    text-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    min-width: 40%;
+    background-color: var(--c-green);
+    color: white;
+    border: 2px solid white;
+    opacity: 0;
+}
+
+.intro-text-container-1 {
+    animation: dropDown 1.3s ease 0.2s 1 alternate forwards, stretch 1s ease 2s 1 forwards;   
+}
+
+.intro-text-container-2 {
+    animation: dropDown 1.4s ease 0.3s 1 alternate forwards, stretch 1s ease 2s 1 forwards;   
+}
+
+
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes unhide {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes stretch {
+    100% {
+        min-width: 70%;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform:rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(90deg);
+    }   
+    100% {
+        transform: rotate(0deg);
+    }   
+}

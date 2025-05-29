@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="./scripts/manipulator.js" defer></script>
+  <script src="./scripts/observer.js" defer></script>
+</head>
+
+<body>
+  <div id="general-overlay"></div>
+
+  <header class="intro-container">
+    <div class="intro">
+        <div class="intro-prof-pic-container">
+            <img class="prof-pic" src="assets/images/prof-pic.png">
+        </div>
+        <div class="intro-info">
+          <div class="intro-text-container-1">
+            <h1 class="intro-text">VICTOR SUNNY</h1>
+          </div>
+          <div class="intro-text-container-2">
+            <h2 class="intro-text">Backend Web Developer</h2>
+          </div>
+        </div>
+    </div>
+    <div class="transparency-overlay"></div>
+    <div class="transparency-overlay-dark"></div>
+  </header>
+
+  <main>
+
+    <div class="main-bg"></div>
+
+    <div class="about-container">
+        <p class="about p-text">
+            Hey there, Victor here ! <div class="shake-icon">&#128075;</div>
+        </p>
+        <p class="about p-text">
+            I am a backend developer who believes that every problem that can be fixed, will be fixed if given enough
+            effort & dedication.
+        </p>
+        <p class="about p-text">
+            I am highly proficient in backend web/app developement using Python, javascript, django, html, css,
+            and other related technologies,
+            readily adopting and adapting to new, required technologies, meeting up to latest industry standards,
+            user needs, quality, and reliability.
+            <br>
+            HackerRank certified
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- start of personal projects expo -->
+    <div class="projects-container">
+        <h2> A FEW OF MY PERSONAL PROJECTS </h2>
+
+        <div class="project-card card">
+            <div class="project-info">
+                <h3>
+                    The Blog Slug
+                </h3>
+                <p class="p-text">A website for established and aspiring bloggers/journalists to publish their articles, catch
+                    up on the latest headlines, and interact with people of interest by following, messaging,
+                    and commenting. <br>
+                    Built with Python, django, django rest framework, django countries, html, tailwind css,
+                    whitenoise.
+                </p>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-01.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-02.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-03.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-04.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-05.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-06.jpg">
+                  <img class="slider-image" src="assets/screenshots/bs/bs-sh-07.jpg">
+                </div>
+            </div>
+            <div class="project-link-container">
+                <a class="project-link" href="https://theblogslug.pythonanywhere.com">
+                    <button class="wb-btn"> Live Website </button>
+                </a>
+                <a class="project-link" href="https://github.com/VictorSunny/the-blog-slug">
+                    <button class="git-btn"> Github Repo </button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="project-card card">
+            <div class="project-info">
+                <h3>
+                    Worm Books
+                </h3>
+                <p class="p-text">
+                    A social site where users can share book recommendations, find their next read from other
+                        readers,
+                        and build connections with people of similar taste by following, liking, commenting, and
+                        more.
+                        Supports password recovery using email/OTP authentication, same as for signup process.
+                </p>
+            </div>
+            <div class="slider-container">
+              <div class="slider">
+                <img class="slider-image" src="assets/screenshots/wb/wb-sh-01.jpg">
+                <img class="slider-image" src="assets/screenshots/wb/wb-sh-02.jpg">
+                <img class="slider-image" src="assets/screenshots/wb/wb-sh-03.jpg">
+                <img class="slider-image" src="assets/screenshots/wb/wb-sh-04.jpg">
+                <img class="slider-image" src="assets/screenshots/wb/wb-sh-05.jpg">
+              </div>
+            </div>
+            <div class="project-link-container">
+              <a class="project-link" href="https://wormbooks.pythonanywhere.com">
+                <button class="wb-btn"> Live Website </button>
+              </a>
+              <a class="project-link" href="https://github.com/victorsunny/wormbooks">
+                  <button class="git-btn"> Github Repo </button>
+              </a>
+            </div>
+        </div>
+        <div class="project-card card">
+            <div class="project-info">
+              <h3>
+                Samatha Scraper Service Client-side
+              </h3>
+              <p class="p-text">
+                Built and designed a frontend client prototype with backend logic under Dowell Research.
+              </p>
+            </div>
+            <div class="slider-container">
+              <div class="slider">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-01.jpg">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-02.jpg">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-03.jpg">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-04.jpg">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-05.jpg">
+                <img class="slider-image" src="assets/screenshots/dws/dws-sh-06.jpg">
+              </div>
+            </div>
+
+        </div>
+
+        <div class="project-card card">
+            <div class="project-info">
+              <h3>
+                World Readers API
+              </h3>
+              <p class="p-text">
+                A REST API that accepts and retrieves data on book recommendations from users around the
+                world. Books can be filtered based on category, date, and name.<br>
+                Built with python, django, django rest framework, djoser.
+              </p>
+            </div>
+              
+            <div class="project-link-container">
+              <a class="project-link" href="https://github.com/VictorSunny/world-readers-api">
+                <button class="git-btn">
+                  Github Repo
+                </button>
+              </a>
+            </div>
+        </div>
+
+        <div class="project-card card">
+            <div class="project-info">
+              <h3>
+                Classic Snake Game
+              </h3>
+              <p class="p-text">
+                A recreation of the classic Xenia snake game, built purely with python and tkinter.<br>
+                A solid demonstration of object-oriented programming in action.
+              </p>
+            </div>
+              
+            <div class="project-link-container">
+              <a class="project-link" href="https://github.com/VictorSunny/Python-snake-game">
+                <button class="git-btn">
+                  Github Repo
+                </button>
+              </a>
+            </div>
+        </div>
+
+        <div class="project-card card">
+            <div class="project-info">
+              <h3>
+                Others
+              </h3>
+              <p class="p-text">
+                General python scripts <br>
+                demonstrating abstract logic converted to computer programs
+              </p>
+            </div>
+              
+            <div class="project-link-container">
+              <a class="project-link" href="https://github.com/VictorSunny/">
+                <button class="git-btn">
+                  My Github Profile
+                </button>
+              </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of personal projects expo -->
+
+    <div class="skills-container">
+      <h2>
+        SKILLS & TOOLS
+      </h2>
+
+      <div class="skill-card card">
+        <div class="skill-info">
+          <h3>
+            Backend Development
+          </h3>
+        </div>
+        <ol>
+          <li>Python</li>
+          <li>Django</li>
+          <li>Oauth 2.0</li>
+          <li>Git</li>
+          <li>Celery</li>
+          <li>Pandas</li>
+          <li>TDD</li>
+          <li>Object-oriented Programming</li>
+        </ol>
+
+        <div class="p-text">
+          I design and implement complex backend logic for applications and websites using my advanced knowledge python,
+          backed with related frameworks such as Django, Django rest framework, Oauth2, Git & Github for version control,
+          Redis, and Celery.
+        </div>
+      </div>
+
+      <div class="skill-card card">
+        <div class="skill-info">
+          <h3>
+            API / Database developement
+          </h3>
+        </div>
+        <ol>
+          <li>Django Rest Framework</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>ORM</li>
+          <li>Redis</li>
+          <li>Postman</li>
+        </ol>
+        <div class="p-text">
+          Using Django Rest Framework, i design highly efficient and reliable REST APIs for microservice/clientside
+          interaction or as standalone products supporting third-party use. <br>
+
+          I design and implement relational database migrations such as MySQL, with proficiency is database querying
+          using SQL & ORM queries. <br>
+
+          My database skills are not limited to relational databases as i can handle non-relational databases such
+          as MongoDB and Redis in cases where database complexity is low, and/or speed is essential.
+        </div>
+      </div>
+
+      <div class="skill-card card">
+        <div class="skill-info">
+          <h3>
+            Frontend Development
+          </h3>
+        </div>
+        <ol>
+          <li>Javacript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Tailwind CSS</li>
+          <li>React<i>(Basic)</i></li>
+        </ol>
+        <div class="p-text">
+          Using HTML & CSS, i create engaging, dynamic, and interactive web pages, presenting data from the backend
+          beautifully and accurately, as well as allow users to interact with the backend. I possess essential knowledge of
+          the <strong>React</strong> framework, and continue to pursue more knowledge on advanced frontend technologies
+          in my quest to becoming a well-rounded Fullstack career.
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+  </main>
+
+  <footer>
+    <div class="transparency-overlay"></div>
+    <div class="transparency-overlay-dark"></div>
+
+    <div class="footer-card footer-contacts">
+      <label>
+        my contacts
+      </label>
+      <ul class="qlink-list">
+
+        <li class="qlink-container">
+          <div class="qlink-label">
+            Email
+          </div>
+          <div class="qlink-url">
+            <a href="mailto:doobam007@gmail.com">
+              <img class="site-icon" src="assets/icons/email-icon.png">
+            </a>
+          </div>
+        </li>
+
+        <li class="qlink-container">
+          <div class="qlink-label">
+            LinkedIn
+          </div>
+          <div class="qlink-url">
+            <a href="https://www.linkedin.com/in/victor-sunny-6b06ba220/">
+              <img class="site-icon" src="assets/icons/linkedin-icon.png">
+            </a>
+          </div>
+        </li>
+
+        <li class="qlink-container">
+          <div class="qlink-label">
+            Github
+          </div>
+          <div class="qlink-url">
+            <a href="https://github.com/victorsunny/">
+              <img class="site-icon" src="assets/icons/github-icon.png">
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="footer-card footer-contacts">
+      <label>
+        recent projects
+      </label>
+      <ul class="qlink-list">
+
+        <li class="qlink-container">
+          <div class="qlink-label">
+            The Blog Slug
+          </div>
+          <div class="qlink-url">
+            <a href="https://theblogslug.pythonanywhere.com">
+              <img class="site-icon" src="assets/icons/external-link.svg">
+            </a>
+          </div>
+        </li>
+
+        <li class="qlink-container">
+          <div class="qlink-label">
+            Worm Books
+          </div>
+          <div class="qlink-url">
+            <a href="https://wormbooks.pythonanywhere.com">
+              <img class="site-icon" src="assets/icons/external-link.svg">
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </footer>
+
+</body>
+</html>
