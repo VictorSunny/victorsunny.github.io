@@ -1,6 +1,5 @@
 console.log("running javascript");
 
-// import closeIcon from "../assets/close-icon.svg";
 
 var main = document.getElementsByTagName("main");
 var overlay = document.getElementById("general-overlay");
