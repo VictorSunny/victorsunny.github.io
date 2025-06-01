@@ -23,7 +23,7 @@ main, footer {
 }
 
 .appear {
-    animation: unhide 0.4s ease 0.2s, enlarge 0.25s ease-in-out 0.2s;
+    animation: unhide 0.2s ease 0.1s, enlarge 0.15s ease-in-out 0.1s;
     animation-fill-mode: forwards;   
 }
 
